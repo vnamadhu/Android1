@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_animations_demo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.felight.myapp2.AnimationsDemoActivity">
+
+    <Button
+        android:onClick="doAnimation"
+        android:text="Rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRotate" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sharukh"
+        android:id="@+id/ivResult"
+        android:layout_below="@+id/btnRotate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp" />
+
+    <Button
+        android:onClick="doAnimation"
+        android:text="FadeIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFadeIn"
+        android:layout_below="@+id/ivResult"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="49dp" />
+
+    <Button
+        android:onClick="doAnimation"
+        android:text="ZoomIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnZoomIn"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnFadeIn"
+        android:layout_toEndOf="@+id/btnFadeIn"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:onClick="doAnimation"
+        android:text="Bounce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBounce"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <Button
+        android:onClick="doAnimation"
+        android:text="Blink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBlink"
+        android:layout_alignBaseline="@+id/btnFadeIn"
+        android:layout_alignBottom="@+id/btnFadeIn"
+        android:layout_alignRight="@+id/ivResult"
+        android:layout_alignEnd="@+id/ivResult" />
+
+    <Button
+        android:onClick="doAnimation"
+        android:text="SlideDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSlideDown"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
