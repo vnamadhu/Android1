@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_parse_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.felight.myapp2.WindowActivity"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <Button
+                    android:onClick="LaunchActivity"
+                    android:textColor="#FFF0FA"
+                    android:layout_gravity="center"
+                    android:text="Google News"
+                    android:background="@drawable/btnred"
+                    android:layout_width="210dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/btngooglenews"
+                    />
+
+                <Button
+                    android:onClick="LaunchActivity"
+                    android:textColor="#FFF0FA"
+                    android:layout_gravity="center"
+                    android:text="Felight News"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/btnfelightnews"
+                    android:layout_below="@+id/btngooglenews"
+                    android:background="@drawable/btnred"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <Button
+                    android:onClick="LaunchActivity"
+                    android:textColor="#FFF0FA"
+                    android:layout_gravity="center"
+                    android:text="Sports News"
+                    android:background="@drawable/btnred"
+                    android:layout_width="165dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/btnsportsnews"
+                    />
+
+                <Button
+                    android:onClick="LaunchActivity"
+                    android:textColor="#FFF0FA"
+                    android:layout_gravity="center"
+                    android:text="Bollywood News"
+                    android:layout_width="195dp"
+                    android:layout_height="110dp"
+                    android:id="@+id/btnbollywoodnews"
+                    android:layout_below="@+id/btngooglenews"
+                    android:background="@drawable/buttonshape"
+                    android:layout_marginLeft="5dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <Button
+                    android:onClick="LaunchActivity"
+                    android:textColor="#FFF0FA"
+                    android:layout_gravity="center"
+                    android:text="Wheather News"
+                    android:background="@drawable/buttonhani"
+                    android:layout_width="110dp"
+                    android:layout_height="170dp"
+                    android:id="@+id/btnwheathernews"
+                    />
+
+                <Button
+                    android:onClick="LaunchActivity"
+                    android:textColor="#FFF0FA"
+                    android:layout_gravity="center"
+                    android:text="Political News"
+                    android:layout_width="250dp"
+                    android:layout_height="170dp"
+                    android:id="@+id/btnpoliticalnews"
+                    android:layout_below="@+id/btngooglenews"
+                    android:background="@drawable/btnred"
+                    android:layout_marginLeft="5dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+                <Button
+                    android:onClick="LaunchActivity"
+                    android:textColor="#FFF0FA"
+                    android:layout_gravity="center"
+                    android:text="Technical News"
+                    android:background="@drawable/buttonhani"
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:id="@+id/btntechnicalnews"
+                    />
+
+                <Button
+                    android:onClick="LaunchActivity"
+                    android:textColor="#FFF0FA"
+                    android:layout_gravity="center"
+                    android:text="Business News"
+                    android:layout_width="210dp"
+                    android:layout_height="170dp"
+                    android:id="@+id/btnbusinessnews"
+                    android:layout_below="@+id/btngooglenews"
+                    android:background="@drawable/buttonshape"
+                    android:layout_marginLeft="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

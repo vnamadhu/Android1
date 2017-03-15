@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter your First Name"
+        android:ems="10"
+        android:id="@+id/etFirstName"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter your Last Name"
+        android:ems="10"
+        android:id="@+id/etLastName"/>
+
+
+    <Button
+        android:onClick="greetUser"
+        android:text="Greeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGreetUser" />
+
+    <TextView
+        android:text="Greetings"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/tvResult"
+        android:layout_weight="0.21"
+        android:textSize="30sp" />
+
+
+</LinearLayout>

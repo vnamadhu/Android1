@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/currencyconverter_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.felight.myapp2.currencyconverterActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Enter the value"
+            android:textSize="20dp"
+            android:ems="10"
+            android:id="@+id/etCurrencySurce"
+            android:layout_row="0"
+            android:layout_column="0"/>
+    <Spinner
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spCurrencySource"
+        android:entries="@array/currency1"
+        android:prompt="@string/currencies"
+        android:layout_row="0"
+        android:layout_column="2"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:hint="converted currency"
+        android:textSize="20dp"
+        android:id="@+id/tvResult"
+        android:layout_row="5"
+        android:layout_column="0"/>
+
+    <Spinner
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spCurrencyDestination"
+        android:entries="@array/currency1"
+        android:prompt="@string/currencies"
+        android:layout_row="5"
+        android:layout_column="2"/>
+    </GridLayout>
+
+</LinearLayout>
